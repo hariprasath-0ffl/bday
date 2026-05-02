@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Messages - Happy Birthday Ma'am 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="messages-styles.css">
+</head>
+<body>
+    <div class="messages-page">
+        <div class="background-decoration"></div>
+        
+        <div class="messages-content">
+            <h1 class="messages-header">Messages from Your Team</h1>
+            <div class="heart-icon">💌</div>
+            
+            <div class="contacts-list">
+                <div class="contact-card" data-name="Swetha" data-message="Happy Birthday Ma'am! Thank you for your constant support and patience. We are so lucky to have you! 🙏">
+                    <div class="contact-avatar" style="background: linear-gradient(135deg, #F9A8B8, #C2185B);">S</div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Swetha</h3>
+                        <p class="contact-preview">Happy Birthday Ma'am! Thank you for your constant support...</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card" data-name="Anita" data-message="Wishing you all the success, happiness, and love you truly deserve. Happy Birthday! 🌸">
+                    <div class="contact-avatar" style="background: linear-gradient(135deg, #FFE4E8, #F9A8B8);">A</div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Anita</h3>
+                        <p class="contact-preview">Wishing you all the success, happiness, and love you truly...</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card" data-name="Rahul" data-message="Your leadership and vision inspire us every single day. Have an amazing birthday! 🎉">
+                    <div class="contact-avatar" style="background: linear-gradient(135deg, #C2185B, #F4C542);">R</div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Rahul</h3>
+                        <p class="contact-preview">Your leadership and vision inspire us every single day...</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card" data-name="Karthik" data-message="Wishing you a year filled with beautiful moments and even bigger achievements. Happy Birthday Ma'am! 💫">
+                    <div class="contact-avatar" style="background: linear-gradient(135deg, #F4C542, #FFE4E8);">K</div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Karthik</h3>
+                        <p class="contact-preview">Wishing you a year filled with beautiful moments and even...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="continue-btn" onclick="window.location.href='closing.html'">Continue →</button>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div class="modal" id="messageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close message">×</button>
+            <div class="modal-confetti"></div>
+            <div class="modal-header">
+                <div class="modal-avatar" id="modalAvatar"></div>
+                <h3 class="modal-name" id="modalName"></h3>
+            </div>
+            <p class="modal-message" id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="messages-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-rose: #FFE4E8;
+    --blush-pink: #F9A8B8;
+    --deep-mauve: #C2185B;
+    --warm-white: #FFF8F9;
+    --gold: #F4C542;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+}
+
+/* ===== CLOSING PAGE ===== */
+.closing-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--soft-rose) 0%, var(--blush-pink) 50%, var(--deep-mauve) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.confetti-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    animation: confettiDrop linear infinite;
+}
+
+@keyframes confettiDrop {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+.closing-content {
+    text-align: center;
+    z-index: 2;
+    padding: 2rem;
+    animation: fadeInScale 1s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.cake-icon {
+    font-size: clamp(4rem, 10vw, 6rem);
+    animation: bounce 2s ease-in-out infinite;
+    margin-bottom: 2rem;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.closing-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.closing-subtitle {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+.closing-footer {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .cake-icon {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .closing-title {
+        font-size: 3rem;
+    }
+    
+    .closing-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .closing-content {
+        padding: 1.5rem;
+    }
+    
+    .cake-icon {
+        font-size: 4rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .closing-title {
+        font-size: 2.5rem;
+    }
+    
+    .closing-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .closing-footer {
+        font-size: 0.9rem;
+    }
+}

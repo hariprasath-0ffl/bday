@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ma'am 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Section 1: Welcome Screen -->
+    <section id="welcome" class="section active">
+        <div class="petals-container"></div>
+        <div class="welcome-content">
+            <h1 class="hero-title">Happy Birthday Ma'am 🎉</h1>
+            <p class="hero-subtitle">A little something made with love from your team</p>
+            <button class="cta-button" id="openSurpriseBtn" aria-label="Open your birthday surprise">
+                Open Your Surprise ✨
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 2: Greeting Card -->
+    <section id="card-section" class="section">
+        <div class="card-container">
+            <div class="card" id="greetingCard">
+                <div class="card-front">
+                    <div class="card-ribbon"></div>
+                    <div class="floral-pattern"></div>
+                    <h2 class="card-front-text">For You, Ma'am 💖</h2>
+                </div>
+                <div class="card-inside">
+                    <div class="card-message">
+                        <p class="card-greeting">To Dear Ma'am,</p>
+                        <p class="card-body">Wishing you happiness, success, and a wonderful year ahead. You make every day brighter. 💖</p>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-hearts"></div>
+        </div>
+        <button class="continue-btn" id="continueToSlideshow" aria-label="Continue to slideshow">Continue →</button>
+    </section>
+
+    <!-- Section 3: Photo Slideshow -->
+    <section id="slideshow" class="section">
+        <button class="music-toggle" id="musicToggle" aria-label="Toggle music">🔇</button>
+        <audio id="bgMusic" loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-memories.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="https://picsum.photos/seed/birthday1/1920/1080" alt="Birthday celebration">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="quote-icon">❝</span>
+                    <h2 class="slide-wish">Wishing you a day as beautiful as your smile 🌸</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://picsum.photos/seed/birthday2/1920/1080" alt="Inspiration">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="quote-icon">❝</span>
+                    <h2 class="slide-wish">Thank you for inspiring us every single day 🙏</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://picsum.photos/seed/birthday3/1920/1080" alt="Leadership">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="quote-icon">❝</span>
+                    <h2 class="slide-wish">Happy Birthday to an amazing leader and human 🎉</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://picsum.photos/seed/birthday4/1920/1080" alt="Success">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="quote-icon">❝</span>
+                    <h2 class="slide-wish">May this year bring you joy, peace, and endless success 💫</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://picsum.photos/seed/birthday5/1920/1080" alt="Gratitude">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="quote-icon">❝</span>
+                    <h2 class="slide-wish">Your kindness and strength guide us all — thank you, Ma'am 💖</h2>
+                </div>
+            </div>
+        </div>
+
+        <button class="slide-arrow left" id="prevSlide" aria-label="Previous slide">‹</button>
+        <button class="slide-arrow right" id="nextSlide" aria-label="Next slide">›</button>
+
+        <div class="slide-dots"></div>
+        <button class="continue-btn slideshow-continue" id="continueToMessages" aria-label="See messages from team">See Messages from the Team →</button>
+    </section>
+
+    <!-- Section 4: Team Messages -->
+    <section id="messages" class="section">
+        <div class="section-wrapper">
+            <div class="messages-container">
+                <h2 class="messages-header">Messages from Your Team 💌</h2>
+                <div class="contacts-list">
+                    <div class="contact-card" data-name="Swetha" data-message="Happy Birthday Ma'am! Thank you for your constant support and patience. We are so lucky to have you! 🙏">
+                        <div class="contact-avatar" style="background: linear-gradient(135deg, #F9A8B8, #C2185B);">S</div>
+                        <div class="contact-info">
+                            <h3 class="contact-name">Swetha</h3>
+                            <p class="contact-preview">Happy Birthday Ma'am! Thank you for your constant support...</p>
+                        </div>
+                    </div>
+                    <div class="contact-card" data-name="Anita" data-message="Wishing you all the success, happiness, and love you truly deserve. Happy Birthday! 🌸">
+                        <div class="contact-avatar" style="background: linear-gradient(135deg, #FFE4E8, #F9A8B8);">A</div>
+                        <div class="contact-info">
+                            <h3 class="contact-name">Anita</h3>
+                            <p class="contact-preview">Wishing you all the success, happiness, and love you truly...</p>
+                        </div>
+                    </div>
+                    <div class="contact-card" data-name="Rahul" data-message="Your leadership and vision inspire us every single day. Have an amazing birthday! 🎉">
+                        <div class="contact-avatar" style="background: linear-gradient(135deg, #C2185B, #F4C542);">R</div>
+                        <div class="contact-info">
+                            <h3 class="contact-name">Rahul</h3>
+                            <p class="contact-preview">Your leadership and vision inspire us every single day...</p>
+                        </div>
+                    </div>
+                    <div class="contact-card" data-name="Karthik" data-message="Wishing you a year filled with beautiful moments and even bigger achievements. Happy Birthday Ma'am! 💫">
+                        <div class="contact-avatar" style="background: linear-gradient(135deg, #F4C542, #FFE4E8);">K</div>
+                        <div class="contact-info">
+                            <h3 class="contact-name">Karthik</h3>
+                            <p class="contact-preview">Wishing you a year filled with beautiful moments and even...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="continue-btn" id="continueToClosing" aria-label="Continue to closing">Continue →</button>
+        </div>
+    </section>
+
+    <!-- Section 5: Closing -->
+    <section id="closing" class="section">
+        <div class="confetti-container"></div>
+        <div class="closing-content">
+            <div class="cake-icon">🎂</div>
+            <h2 class="closing-title">Happy Birthday Ma'am</h2>
+            <p class="closing-subtitle">from all of us, with love 💖</p>
+            <footer class="closing-footer">Made with ❤️ by your team</footer>
+        </div>
+    </section>
+
+    <!-- Message Modal -->
+    <div class="modal" id="messageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close message">×</button>
+            <div class="modal-confetti"></div>
+            <div class="modal-header">
+                <div class="modal-avatar" id="modalAvatar"></div>
+                <h3 class="modal-name" id="modalName"></h3>
+            </div>
+            <p class="modal-message" id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
